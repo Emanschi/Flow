@@ -16,8 +16,8 @@
   <summary>A modern desktop teleprompter for smooth reading and voice-controlled scripts</summary>
   <launchable type="desktop-id">app.flowteleprompter.Flow.desktop</launchable>
   <url type="homepage">https://flowteleprompter.vercel.app/</url>
-  <url type="bugtracker">https://github.com/LumoRez07/Flow/issues</url>
-  <url type="vcs-browser">https://github.com/LumoRez07/Flow</url>
+  <url type="bugtracker">https://github.com/Emanschi/Flow/issues</url>
+  <url type="vcs-browser">https://github.com/Emanschi/Flow</url>
   <developer id="io.github.lumorez07">
     <name>LumoRez</name>
   </developer>
@@ -31,6 +31,13 @@
       AI-assisted drafting, remote message injection, and tray controls, made
       for creators, educators, students, and everyone who wants to read off
       their screen while looking at the camera.
+    </p>
+    <p>
+      This package is built from an unofficial, community-maintained Linux
+      fork (github.com/Emanschi/Flow) of the original Windows-only project
+      by LumoRez07 (github.com/LumoRez07/Flow). It may lag behind the
+      original in features and updates; Linux-specific bugs should be
+      reported to the fork, not the original project.
     </p>
   </description>
   <categories>

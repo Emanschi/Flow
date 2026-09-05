@@ -10,10 +10,12 @@
 
 # Building Flow on Linux
 
-Flow is primarily a Windows application, but this branch adds a native
-Linux build (AppImage, `.deb`, `.rpm`, and an Arch `PKGBUILD`). This
-document covers everything needed to build and run it from source on
-Linux, plus the known platform limitations.
+> This is the build guide for **[Emanschi/Flow](https://github.com/Emanschi/Flow)**, an unofficial community fork that adds native Linux packaging on top of [LumoRez07/Flow](https://github.com/LumoRez07/Flow) (Windows only, the official project). See this fork's [README.md](README.md) for why it exists as a separate fork instead of a merged feature.
+
+Flow is primarily a Windows application; this fork adds a native Linux
+build (AppImage, `.deb`, `.rpm`, and an Arch `PKGBUILD`) on top of the
+same codebase. This document covers everything needed to build and run
+it from source on Linux, plus the known platform limitations.
 
 ## Prerequisites
 

@@ -28,191 +28,33 @@
 </table>
 
 <p align="center">
-  <a href="https://github.com/LumoRez07/flow/releases" target="_blank">
-    <img src="https://img.shields.io/github/v/release/LumoRez07/flow?style=flat-square&color=2563eb&label=Version" alt="Version 2.0.0" />
+  <a href="https://github.com/LumoRez07/Flow">
+    <img src="https://img.shields.io/badge/Fork%20von-LumoRez07%2FFlow-24292f?style=flat-square&logo=github&logoColor=white" alt="Fork von LumoRez07/Flow" />
   </a>
-  <a href="https://github.com/LumoRez07/flow/releases" target="_blank">
-    <img src="https://img.shields.io/github/downloads/LumoRez07/flow/total?style=flat-square&color=3b82f6" alt="GitHub Downloads" />
-  </a>
-  <a href="https://sourceforge.net/projects/flowteleprompter/files/latest/download">
-    <img src="https://img.shields.io/sourceforge/dm/flowteleprompter.svg?style=flat-square" alt="SourceForge Downloads" />
-  </a>
-  <img src="https://img.shields.io/badge/Plattform-Windows%2010%20%7C%2011-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows" />
-  <img src="https://img.shields.io/badge/Plattform-Linux%20(Community)-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux (Community-Portierung)" />
+  <img src="https://img.shields.io/badge/Plattform-Linux%20(inoffiziell)-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux (inoffizieller Fork)" />
   <img src="https://img.shields.io/badge/Backend-Rust%20%2B%20Tauri%20v2-FFC131?style=flat-square&logo=tauri&logoColor=black" alt="Tauri + Rust" />
   <img src="https://img.shields.io/badge/Lizenz-GPLv3-22c55e?style=flat-square" alt="GPLv3-Lizenz" />
 </p>
 
-<p align="center">
-  <strong>Leistungsstarker, ressourcenschonender Teleprompter für Windows, entwickelt mit Rust und Tauri.</strong>
-</p>
-
-<p align="center">
-  Bitte gib diesem Repository einen Stern, wenn es dir hilft! ⭐
-</p>
-
-<p align="center">
-  <a href="https://www.ghacks.net/de/2026/05/28/flow-teleprompter-windows-voice-tracking/" target="_blank">
-    <img src="assets/featured%20on%20ghacks.svg" alt="Vorgestellt auf Ghacks" width="480" />
-  </a>
-</p>
-
-## Flow ist verfügbar auf
-<div align="center">
-  <a href="https://sourceforge.net/p/flowteleprompter/">
-    <img alt="Flow Teleprompter herunterladen" src="https://sourceforge.net/sflogo.php?type=17&amp;group_id=4087698" width="200">
-  </a>
-  <a href="https://apps.microsoft.com/detail/9p1fvfhwpmqr?mode=direct">
-    <img alt="Im Microsoft Store erhältlich" src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
-  </a>
-  <br>
-</div>
-
 </div>
 
 ---
 
-<p align="center">
-  <img src="src/assets/readme-assets/de-f.webp" alt="Funktionen" width="960" />
-</p>
-
-- Fünf Wiedergabemodi: Hervorhebung (Highlight), Scrollen (Scroll), Zeile (Line), Pfeil (Arrow) und Sprachverfolgung (Voice Tracking).
-- Lokale Speicherung von Skripten und persistente Einstellungen nach dem Local-First-Prinzip.
-- Dedizierte Audioeingangskalibrierung mit Geräteauswahl, Live-Pegelüberwachung, Noise Gate und Verstärkungsregelung (Gain).
-- App-weite Sprachsteuerung mit lokalisierten Aktivierungswörtern und zuverlässiger Erkennungslogik.
-- Vosk-Sprachmodelle mit integrierter englischer Sprachunterstützung und herunterladbaren Paketen für Deutsch, Türkisch, Arabisch, Französisch, Spanisch, Portugiesisch und Finnisch.
-- Hinweiskarten (Cue Cards) mit Countdown-Pausen und automatischer Fortsetzung.
-- Integrierter Skript-Editor mit Formatierungsoptionen, Wortzähler und Lesezeitschätzung.
-- Remote-Nachrichtenübertragung mit Posteingangsvorschau, Schnellverbindungs-QR-Codes und Antwortstatus-Updates auf Absenderseite.
-- Echtzeit-Textbearbeitung, die es mehreren Gästen ermöglicht, über einen privaten Browser-Raum gleichzeitig am selben Skript zu arbeiten.
-- Optionale Textgenerierung und Umformulierung mit KI-Unterstützung durch Groq.
-- Always-on-Top-Windows-Overlay mit Durchklickmodus (Click-Through) und Aufnahmeschutz (Capture-Protection).
-- Offizieller Tauri-Updater mit In-App-Prüfungen, Installationssteuerung und Unterstützung signierter Windows-Release-Feeds.
+> ### 🐧 Dies ist ein inoffizieller, von der Community gepflegter Linux-Fork
+>
+> **Flow** ist eine Windows-Teleprompter-App von [LumoRez07](https://github.com/LumoRez07). Dieses Repository ist ein **Fork**, der auf demselben Codebasis einen nativen Linux-Build ergänzt (AppImage, `.deb`, `.rpm`, Arch-`PKGBUILD`) — es ist **nicht** das offizielle Projekt und wird **nicht** über den Microsoft Store, SourceForge oder die GitHub Releases des Originals vertrieben.
+>
+> Die Linux-Unterstützung wurde dem Original-Projekt als [Pull Request](https://github.com/LumoRez07/Flow/pull/3) angeboten; der Maintainer hat [das Mergen abgelehnt](https://github.com/LumoRez07/Flow/pull/3#issuecomment-5464963891), da Linux nicht auf seiner Roadmap steht und er es selbst nicht testen/pflegen kann — er hat aber ausdrücklich gesagt, dass dieser Fork unter der GPL-Lizenz gerne bestehen bleiben darf. Das bedeutet konkret:
+>
+> - **Für die originale Windows-App** — vollständige Funktionsliste, Screenshots, offizielle Downloads und die Projekt-Roadmap — siehe **[github.com/LumoRez07/Flow](https://github.com/LumoRez07/Flow)**. Dieses Dokument beschreibt nur, was am Linux-Build anders ist.
+> - **Dieser Fork kann hinter dem Original zurückliegen.** Neue Funktionen/Fixes von der Windows-Seite landen hier nur, wenn sie jemand manuell nachzieht — es gibt keine Garantie für einen synchronen Stand.
+> - Fehler, die speziell die Linux-Paketierung betreffen, gehören in den Issue-Tracker **dieses Repositories**, nicht in den des Originals.
 
 ---
 
-<p align="center">
-  <img src="src/assets/readme-assets/de-sc.webp" alt="Funktionsübersicht" width="960" />
-</p>
+## Was auf Linux anders ist
 
-### 1. Nachrichteneinblendung (Message Injection)
-https://github.com/user-attachments/assets/5e6a4fd1-5084-4e33-b56e-0142c2ad83ce
-
-### 2. Echtzeit-Bearbeitung (Realtime Editing)
-https://github.com/user-attachments/assets/653988f9-03f1-40ad-95b8-04339356cb07
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/de-ss.webp" alt="Screenshots" width="960" />
-</p>
-
-<div align="center">
-  <h3>Hauptansicht des Teleprompters</h3>
-  <img src="./assets/main teleprompter.png" width="400" alt="Hauptansicht"/>
-  <img src="./assets/main chaned size.png" width="400" alt="Angepasstes Layout"/>
-  
-  <br><br>
-  
-  <h3>Skript-Editor & integrierter KI-Assistent</h3>
-  <img src="./assets/text editor.png" width="400" alt="Editor-Benutzeroberfläche"/>
-  <img src="./assets/AI assistant.png" width="400" alt="KI-Arbeitsbereich-Integration"/>
-
-  <br><br>
-
-  <h3>Einstellungen & Kompaktansicht</h3>
-  <img src="./assets/settings.png" width="400" alt="Anwendungseinstellungen"/>
-  <img src="./assets/minimized.png" width="400" alt="Kompaktes Overlay"/>
-</div>
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/de-win.webp" alt="Was ist neu?" width="960" />
-</p>
-
-- **Skript-Bibliothek & Manager**: Integrierter Skript-Manager zum sofortigen Speichern, Organisieren, Durchsuchen und Wechseln zwischen mehreren Skripten inklusive schneller Datei-Importfunktionen.<br><br>
-- **Abschnitts-Navigator & Fortschrittsverfolgung**: Neue Abschnitts-Tags und visuelle Meilensteine, um lange Skripte zu strukturieren, mit einem Klick zwischen Abschnitten zu springen und den Lesefortschritt live zu verfolgen.<br><br>
-- **Modularisierte Codebasis**: Vollständige Neustrukturierung der Kernfunktionen in eine modulare Architektur für schnellere Ladezeiten, maximale Stabilität und zukunftssichere Erweiterbarkeit.<br><br>
-- **Startbildschirm (Splash Screen)**: Eleganter Ladebildschirm mit sanfter Überblendung (Crossfade) zur Vermeidung von Fensterflackern beim Start.<br><br>
-- **Multi-Monitor- & DPI-Korrekturen**: Optimierte Fensterpositionierung, Koordinatenpräzision und Skalierung bei Setups mit mehreren Monitoren und gemischten DPI-Werten.<br><br>
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/de-rm.webp" alt="Roadmap" width="960" />
-</p>
-
-- [x] Neuentwicklung der Kernarchitektur mit Tauri + Rust
-- [x] Unsichtbares Overlay für Bildschirmübertragungen, Präsentationen und Videoanrufe
-- [x] Zertifizierung und Veröffentlichung im Microsoft Store
-- [x] Migration zu Cloudflare
-- [x] v2.0.0: Refaktorisierung der Frontend-JavaScript-Module und Leistungsoptimierungen
-- [x] v2.0.0: Implementierung der Free/Pro-Funktionstrennung
-- [ ] v2.1.0: Verbesserungen an der Web-Landingpage und dem Remote-Relay-Client
-- [ ] v2.2.0+: Noch festzulegen
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/de-gs.webp" alt="Jetzt starten" width="960" />
-</p>
-
-1. Lade die neueste Version aus dem [Microsoft Store](https://apps.microsoft.com/detail/9p1fvfhwpmqr?mode=direct) oder von den [GitHub Releases](https://github.com/LumoRez07/flow/releases) herunter;
-2. Führe das `.exe`- oder `.msi`-Installationsprogramm aus;
-3. Starte Flow und beginne mit dem Vortragen.
-
----
-
-## Entwicklung
-
-Voraussetzungen:
-- Node.js
-- Rust
-- Tauri-Voraussetzungen für Windows
-
-Lokal ausführen:
-
-```bash
-npm install
-npm run tauri dev
-```
-
-Erstellen (Build):
-
-```bash
-npm run tauri build
-```
-
-Build-Ausgabe:
-
-```text
-src-tauri/target/release
-src-tauri/target/release/bundle
-```
-
-### Signiertes Updater-Release
-
-Um ein Windows-Release zu erstellen, das für GitHub Releases und den In-App-Updater von Flow bereit ist, lade den Updater-Signaturschlüssel vor dem Build in die Umgebung:
-
-```powershell
-$env:TAURI_SIGNING_PRIVATE_KEY = Get-Content -Raw "$HOME\.tauri\flow-updater.key"
-$env:TAURI_SIGNING_PRIVATE_KEY_PASSWORD = "<your-updater-key-password>"
-npm run tauri build
-```
-
-Veröffentliche diese Dateien aus `src-tauri/target/release/bundle` im GitHub-Release:
-
-- `msi/flow_2.0.0_x64_en-US.msi`
-- `latest.json`
-
-Die `.sig`-Datei wird zusammen mit der MSI zur Referenz generiert, während `latest.json` der vom Programm genutzte Updater-Feed ist.
-
----
-
-## Linux (Community-Portierung)
-
-Flow lässt sich auch nativ unter Linux bauen — als AppImage, `.deb`, `.rpm` oder über ein Arch-`PKGBUILD`. Diese Portierung wird von der Community gepflegt; Windows bleibt die primäre, offiziell unterstützte Plattform. Voraussetzungen und Build-Anleitung stehen in [BUILDING-LINUX.md](BUILDING-LINUX.md) — ein offizielles, fertig gebautes Release gibt es noch nicht, daher ist aktuell ein Build aus dem Quellcode nötig (oder ein Artefakt aus dem [Linux-CI-Workflow](.github/workflows/build-linux.yml)).
+Alles, was hier nicht aufgeführt ist (Wiedergabe-Stile, Skript-Editor, Sprachverfolgung, Fernnachrichten, Realtime-Editing, KI-gestütztes Umschreiben, das Windows-Overlay/der Updater usw.), funktioniert genauso wie im [README des Originals](https://github.com/LumoRez07/Flow) beschrieben — dieser Fork ändert daran nichts, sondern ergänzt nur die Linux-Paketierung und ein paar Linux-spezifische Anpassungen.
 
 Ehrliche Übersicht der Einschränkungen gegenüber Windows:
 
@@ -222,37 +64,44 @@ Ehrliche Übersicht der Einschränkungen gegenüber Windows:
 | Wayland | Läuft standardmäßig über XWayland (Always-on-Top, absolute Fensterpositionierung und globale Hotkeys benötigen es); natives Wayland ist optional aktivierbar, bricht dabei aber genau diese drei Funktionen. |
 | Fernsteuerung (Remote Control) | Funktioniert, benötigt aber einmalig eine manuelle Firewall-Freigabe für TCP-Port 43127 (die meisten Linux-Desktops blockieren eingehende Verbindungen standardmäßig, anders als der Erstlaunch-Dialog unter Windows). |
 | Automatisches In-App-Update | Funktioniert bei der AppImage; `.deb`/`.rpm`/`PKGBUILD`-Installationen werden stattdessen über den Paketmanager der Distribution aktualisiert. |
+| Distribution | Es gibt noch keine fertig gebauten Releases — siehe [Erste Schritte](#erste-schritte) unten. |
+
+## Erste Schritte
+
+Es gibt noch keine offiziellen, fertig gebauten Linux-Binärdateien. Optionen, einfachste zuerst:
+
+1. **Arch Linux**: das mitgelieferte [`PKGBUILD`](packaging/arch/PKGBUILD) (baut aus dem Quellcode) oder [`PKGBUILD-bin`](packaging/arch/PKGBUILD-bin) (sobald ein Release mit Binär-Assets existiert) verwenden.
+2. **Beliebige Distribution**: ein AppImage-/`.deb`-/`.rpm`-Artefakt aus dem letzten erfolgreichen Lauf des [Linux-CI-Workflows](.github/workflows/build-linux.yml) holen.
+3. **Selbst aus dem Quellcode bauen**: siehe [BUILDING-LINUX.md](BUILDING-LINUX.md) für Voraussetzungen je Distribution und Build-Befehle.
+
+Für Windows die offiziellen Kanäle nutzen, die im [README des Originals](https://github.com/LumoRez07/Flow) verlinkt sind (Microsoft Store, GitHub Releases, SourceForge).
+
+## Entwicklung
+
+Die Änderungen dieses Forks betreffen ausschließlich Linux (kein `#[cfg(windows)]`-Code oder gemeinsam genutzte Tauri-Konfiguration wurde angefasst). Voraussetzungen, Build-Befehle und bekannte Probleme beim Bauen stehen in **[BUILDING-LINUX.md](BUILDING-LINUX.md)**.
+
+Für die Windows-Entwicklung siehe das [Original-Repository](https://github.com/LumoRez07/Flow).
 
 ---
 
 ## Datenschutz
 
-- Die meisten Daten werden lokal auf dem Gerät gespeichert.
-- Die Sprachverfolgung läuft vollständig lokal über Vosk-Modelle.
-- Groq-Anfragen werden nur gesendet, wenn KI-Funktionen aktiv genutzt werden.
-- Siehe [privacy-policy.md](privacy-policy.md) für die aktuelle Datenschutzerklärung.
-
----
-
-## Danksagung
-
-Ein besonderer Dank gilt [@emanschigames](https://www.instagram.com/emanschigames/?hl=en) und [@nour690](https://github.com/nour690) für ihre Unterstützung von Flow Teleprompter, als es am meisten gebraucht wurde. Auch wenn es eine kleine Geste gewesen sein mag, hat sie viel bedeutet und wird aufrichtig geschätzt.
-
+Gleiches Datenverhalten wie im Original — die meisten Daten bleiben lokal, Sprachverfolgung läuft lokal über Vosk-Modelle, und Groq-Anfragen werden nur gesendet, wenn KI-Funktionen genutzt werden. Siehe [privacy-policy.md](privacy-policy.md).
 
 ---
 
 ## Lizenz
 
-Dieses Projekt ist unter der GPL-3.0-or-later lizenziert. Siehe [LICENSE](LICENSE).
+Wie das Original steht auch dieses Projekt unter GPL-3.0-or-later. Siehe [LICENSE](LICENSE). Die ursprüngliche Urheberschaft bleibt vollständig bei [LumoRez07](https://github.com/LumoRez07); die Linux-spezifischen Ergänzungen dieses Repositories sind Erweiterungen auf dieser Codebasis, ebenfalls unter GPLv3 veröffentlicht.
 
 ---
 
-## Star History
+## Star-Verlauf (Star History)
 
-<a href="https://www.star-history.com/?repos=LumoRez07%2FFlow&type=date&legend=top-left">
+<a href="https://www.star-history.com/?repos=Emanschi%2FFlow&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=LumoRez07/Flow&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=LumoRez07/Flow&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=LumoRez07/Flow&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Emanschi/Flow&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Emanschi/Flow&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Emanschi/Flow&type=date&legend=top-left" />
  </picture>
 </a>

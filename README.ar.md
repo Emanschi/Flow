@@ -28,253 +28,32 @@
 </table>
 
 <p align="center">
-  <a href="https://github.com/LumoRez07/flow/releases" target="_blank">
-    <img src="https://img.shields.io/github/v/release/LumoRez07/flow?style=flat-square&color=2563eb&label=version" alt="Version 2.0.0" />
+  <a href="https://github.com/LumoRez07/Flow">
+    <img src="https://img.shields.io/badge/fork%20of-LumoRez07%2FFlow-24292f?style=flat-square&logo=github&logoColor=white" alt="فرع من LumoRez07/Flow" />
   </a>
-  <a href="https://github.com/LumoRez07/flow/releases" target="_blank">
-    <img src="https://img.shields.io/github/downloads/LumoRez07/flow/total?style=flat-square&color=3b82f6" alt="GitHub Downloads" />
-  </a>
-  <a href="https://sourceforge.net/projects/flowteleprompter/files/latest/download">
-    <img src="https://img.shields.io/sourceforge/dm/flowteleprompter.svg?style=flat-square" alt="SourceForge Downloads" />
-  </a>
-  <img src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows" />
-  <img src="https://img.shields.io/badge/platform-Linux%20(community)-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux (community port)" />
-  <img src="https://img.shields.io/badge/backend-Rust%20%2B%20Tauri%20v2-FFC131?style=flat-square&logo=tauri&logoColor=black" alt="Tauri + Rust" />
-  <img src="https://img.shields.io/badge/license-GPLv3-22c55e?style=flat-square" alt="GPLv3 License" />
+  <img src="https://img.shields.io/badge/platform-Linux%20(unofficial)-FCC624?style=flat-square&logo=linux&logoColor=black" alt="لينكس (فرع غير رسمي)" />
 </p>
-
-<p align="center">
-  <strong>مُلقِّن نصوص عالي الأداء وخفيف الوزن لنظام Windows، مبني باستخدام Rust وTauri.</strong>
-</p>
-
-<p align="center">
-  إذا نال هذا المشروع إعجابك، يرجى التفكير في دعمه بنجمة! ⭐
-</p>
-
-<p align="center">
-  <a href="https://www.ghacks.net/de/2026/05/28/flow-teleprompter-windows-voice-tracking/" target="_blank">
-    <img src="assets/featured%20on%20ghacks.svg" alt="Featured on Ghacks" width="480" />
-  </a>
-</p>
-
-## برنامج Flow متوفر على
-<div align="center">
-  <a href="https://sourceforge.net/p/flowteleprompter/">
-    <img alt="Download Flow Teleprompter" src="https://sourceforge.net/sflogo.php?type=17&amp;group_id=4087698" width="200">
-  </a>
-  <a href="https://apps.microsoft.com/detail/9p1fvfhwpmqr?mode=direct">
-    <img alt="Get it from Microsoft" src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
-  </a>
-  <br>
-</div>
 
 </div>
 
 ---
 
-<div dir="rtl">
+### 🐧 هذا فرع غير رسمي للينكس يديره المجتمع
 
-<p align="center">
-  <img src="src/assets/readme-assets/ar-f.webp" alt="المميزات" width="960" />
-</p>
+**Flow** تطبيق تلقين نصوص (تيليبرومبتر) لنظام ويندوز من تطوير [LumoRez07](https://github.com/LumoRez07). هذا المستودع هو **فرع (fork)** يضيف بناءً أصليًا للينكس (AppImage وحزم `.deb` و`.rpm` وملف `PKGBUILD` لأرتش) فوق نفس الكود المصدري — وهو **ليس** المشروع الرسمي، ولا يُوزَّع عبر متجر مايكروسوفت أو SourceForge أو إصدارات GitHub الخاصة بالمشروع الأصلي.
 
-- خمسة أنماط تشغيل: التمييز (highlight)، التمرير التلقائي (scroll)، نمط السطر (line)، المؤشر السهمي (arrow)، والتتبع الصوتي (voice tracking).
-- حفظ محلي أولاً للنصوص وإعدادات التطبيق.
-- ضبط مخصص لمدخلات الصوت مع اختيار الجهاز، والمراقبة الحية، وبوابة الضوضاء (noise gate)، والتحكم في الكسب (gain).
-- تحكم صوتي شامل في التطبيق مع تحيات تنبيه مترجمة ومعالجة مرنة للتعرف على الصوت.
-- نماذج Vosk للتعرف على الصوت مع دعم مدمج للغة الإنجليزية وإمكانية تنزيل التركية، العربية، الألمانية، الفرنسية، الإسبانية، البرتغالية، والفنلندية.
-- بطاقات توجيهية مع مؤقتات تنازلية للتوقف المؤقت والاستئناف التلقائي.
-- محرر نصوص مدمج مع أدوات التنسيق، وعد الكلمات، وحساب وقت القراءة المقدر.
-- تدفق رسائل عن بُعد مع مراجعة صندوق الوارد، وروابط الاستجابة السريعة (QR)، وتحديثات حالة الرد من جانب المرسل.
-- تحرير فوري للنصوص يتيح لعدة ضيوف الانضمام وتعديل النص في نفس الوقت عبر غرفة متصفح خاصة ومحمية.
-- توليد وإعادة صياغة النصوص اختيارياً باستخدام الذكاء الاصطناعي المدعوم من Groq.
-- نافذة عائمة دائمة في المقدمة لنظام Windows مع خيارات النقر عبر النافذة (click-through) وحماية التقاط الشاشة (capture-protection).
-- نظام تحديث رسمي من Tauri مع فحوصات داخل التطبيق، وعناصر تحكم في التثبيت، ودعم تغذية إصدارات Windows الموقعة.
+تم تقديم دعم لينكس للمشروع الأصلي في شكل [طلب سحب (pull request)](https://github.com/LumoRez07/Flow/pull/3)؛ وقد [رفض المشرف دمجه](https://github.com/LumoRez07/Flow/pull/3#issuecomment-5464963891) لأن لينكس ليس ضمن خطته الحالية ولأنه لا يستطيع اختباره أو صيانته بنفسه، لكنه صرّح بوضوح أن هذا الفرع يمكن أن يستمر بموجب رخصة GPL. قد يتأخر هذا الفرع عن المشروع الأصلي، ويجب الإبلاغ عن المشاكل الخاصة بحزم لينكس في متتبع المشاكل الخاص **بهذا** المستودع، وليس في متتبع المشروع الأصلي.
 
----
+لم تُحدَّث هذه الترجمة العربية بعد لتطابق البنية الجديدة المركّزة على لينكس. في الوقت الحالي:
 
-<p align="center">
-  <img src="src/assets/readme-assets/ar-sc.webp" alt="استعراض الميزات" width="960" />
-</p>
+- **لتطبيق ويندوز الأصلي** (قائمة الميزات الكاملة، لقطات الشاشة، التنزيلات الرسمية، خطة الطريق): راجع **[github.com/LumoRez07/Flow](https://github.com/LumoRez07/Flow)** أو [ملف README بالعربية](https://github.com/LumoRez07/Flow/blob/main/README.ar.md) الخاص به.
+- **للتوثيق الكامل لهذا الفرع الخاص بلينكس** (القيود، كيفية البدء، التطوير): راجع [README بالإنجليزية](README.md) أو [README بالألمانية](README.de.md) الخاصين بهذا الفرع.
+- **للبناء على لينكس**: راجع [BUILDING-LINUX.md](BUILDING-LINUX.md).
 
-### 1. إرسال الرسائل (Message Injection)
-https://github.com/user-attachments/assets/5e6a4fd1-5084-4e33-b56e-0142c2ad83ce
-
-### 2. التحرير في الوقت الفعلي (Realtime Editing)
-https://github.com/user-attachments/assets/653988f9-03f1-40ad-95b8-04339356cb07
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/ar-ss.webp" alt="لقطات الشاشة" width="960" />
-</p>
-
-<div align="center">
-  <h3>المظهر الرئيسي للمُلقن</h3>
-  <img src="./assets/main teleprompter.png" width="400" alt="المُلقن الرئيسي"/>
-  <img src="./assets/main chaned size.png" width="400" alt="تغيير الحجم والتخطيط"/>
-  
-  <br><br>
-  
-  <h3>محرر النصوص ومساعد الذكاء الاصطناعي المدمج</h3>
-  <img src="./assets/text editor.png" width="400" alt="واجهة محرر النصوص"/>
-  <img src="./assets/AI assistant.png" width="400" alt="تكامل مساحة عمل الذكاء الاصطناعي"/>
-
-  <br><br>
-
-  <h3>الإعدادات والعرض المصغر</h3>
-  <img src="./assets/settings.png" width="400" alt="إعدادات التطبيق"/>
-  <img src="./assets/minimized.png" width="400" alt="النافذة المصغرة"/>
-</div>
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/ar-win.webp" alt="ما الجديد؟" width="960" />
-</p>
-
-- **مكتبة وإدارة النصوص (Script Library & Manager)**: إضافة مدير نصوص مدمج لحفظ النصوص المتعددة وتنظيمها والبحث فيها والتبديل بينها على الفور، مع دعم الاستيراد السريع للملفات.<br><br>
-- **متصفح الأقسام وتتبع الإنجاز (Section Navigator & Completion Tracker)**: إضافة وسوم الأقسام لتقسيم النصوص الطويلة إلى محطات واضحة، مع إمكانية التنقل السريع بين الأقسام ومتابعة نسبة الإنجاز والتقدم أثناء القراءة مباشرة.<br><br>
-- **هيكلة برمجية نمطية (Modularized Codebase)**: إعادة بناء الوظائف الأساسية ضمن بنية معمارية نمطية عالية الكفاءة لتحسين سرعة التحميل والاستقرار الفائق والتطوير المستقبلي.<br><br>
-- **شاشة بدء التشغيل (Splash Screen)**: إضافة شاشة بدء أنيقة بتأثير انتقال سلس (crossfade) لمنع أي وميض بصري عند فتح التطبيق.<br><br>
-- **تحسينات الشاشات المتعددة ودقة DPI**: تحسين تموضع النوافذ، ودقة الإحداثيات، وتوافق التحجيم عبر الشاشات المتعددة وبيئات كثافة النقاط المتنوعة (mixed-DPI).<br><br>
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/ar-rm.webp" alt="خارطة الطريق" width="960" />
-</p>
-
-- [x] إعادة كتابة البنية المعمارية الأساسية باستخدام Tauri + Rust
-- [x] طبقة شفافة وغير مرئية لمشاركة الشاشة، والعروض التقديمية، ومكالمات الفيديو
-- [x] التوثيق والإطلاق على متجر Microsoft Store
-- [x] الانتقال إلى Cloudflare
-- [x] v2.0.0: إعادة هيكلة وحدات JavaScript للواجهة الأمامية وتحسين الأداء
-- [x] v2.0.0: تطبيق منطق الفصل بين النسخة المجانية والاحترافية (Free/Pro)
-- [ ] v2.1.0: تحسينات على الصفحة الرئيسية لموقع الويب وعميل التحكم عن بعد
-- [ ] v2.2.0+: سيتم تحديده لاحقاً
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/ar-gs.webp" alt="ابدأ الآن" width="960" />
-</p>
-
-1. قم بتنزيل أحدث إصدار من [Microsoft Store](https://apps.microsoft.com/detail/9p1fvfhwpmqr?mode=direct) أو [إصدارات GitHub](https://github.com/LumoRez07/flow/releases)؛
-2. شغّل ملف التثبيت بصيغة `.exe` أو `.msi`؛
-3. افتح Flow وابدأ الإلقاء.
-
----
-
-## التطوير
-
-المتطلبات:
-- Node.js
-- Rust
-- متطلبات Tauri لنظام التشغيل Windows
-
-التشغيل محلياً:
-
-<div dir="ltr">
-
-```bash
-npm install
-npm run tauri dev
-```
-
-</div>
-
-البناء والتجميع:
-
-<div dir="ltr">
-
-```bash
-npm run tauri build
-```
-
-</div>
-
-مخرجات البناء:
-
-<div dir="ltr">
-
-```text
-src-tauri/target/release
-src-tauri/target/release/bundle
-```
-
-</div>
-
-### إصدار التحديثات الموقع
-
-لإنشاء إصدار Windows جاهز للنشر على GitHub Releases ونظام التحديث المدمج في Flow، قم بتحميل مفتاح توقيع أداة التحديث في بيئة العمل قبل البناء:
-
-<div dir="ltr">
-
-```powershell
-$env:TAURI_SIGNING_PRIVATE_KEY = Get-Content -Raw "$HOME\.tauri\flow-updater.key"
-$env:TAURI_SIGNING_PRIVATE_KEY_PASSWORD = "<your-updater-key-password>"
-npm run tauri build
-```
-
-</div>
-
-انشر هذه الملفات من المجلد `src-tauri/target/release/bundle` إلى إصدار GitHub:
-
-- `msi/flow_2.0.0_x64_en-US.msi`
-- `latest.json`
-
-يتم إنشاء ملف `.sig` بجانب ملف MSI كمرجع، بينما يمثل `latest.json` مصدر التحديثات الذي يستهلكه التطبيق.
-
----
-
-## Linux (community port)
-
-Flow also builds natively on Linux, as an AppImage, `.deb`, `.rpm`, or an Arch `PKGBUILD`. This is a community-maintained port; Windows remains the primary, officially supported platform. See [BUILDING-LINUX.md](BUILDING-LINUX.md) for prerequisites and build instructions — there is no official pre-built binary release yet, so building from source (or grabbing an artifact from the [Linux CI workflow](.github/workflows/build-linux.yml)) is currently required.
-
-Honest limitations compared to Windows:
-
-| Feature | Linux |
-| --- | --- |
-| Screen-capture protection | Not available — the underlying API is Windows-only, with no X11/Wayland equivalent. |
-| Wayland | Runs via XWayland by default (always-on-top, absolute positioning, and global hotkeys need it); native Wayland is opt-in but breaks those three. |
-| Remote Control | Works, but needs a one-time manual firewall exception for TCP port 43127 (most Linux desktops default-deny inbound connections, unlike Windows' first-launch prompt). |
-| In-app auto-update | Works for the AppImage; `.deb`/`.rpm`/`PKGBUILD` installs update through your distro's package manager instead. |
-
----
-
-## الخصوصية
-
-- يتم تخزين معظم البيانات محلياً على جهازك.
-- يعمل التتبع الصوتي محلياً بالكامل عبر نماذج Vosk.
-- تُرسل طلبات Groq فقط عند استخدام ميزات الذكاء الاصطناعي.
-- راجع [privacy-policy.md](privacy-policy.md) للاطلاع على سياسة الخصوصية الحالية.
-
----
-
-## شكر وتقدير
-
-شكر خاص لكل من [@emanschigames](https://www.instagram.com/emanschigames/?hl=en) و[@nour690](https://github.com/nour690) على دعمهما لـ Flow Teleprompter في الوقت الذي كان بأمس الحاجة إليه. حتى لو كانت لفتة صغيرة، فقد عنت الكثير وهي محل تقدير وامتنان خالص.
-
+هل تودّ المساعدة في ترجمة ملف README الخاص بهذا الفرع إلى العربية؟ طلبات السحب (pull requests) مرحّب بها.
 
 ---
 
 ## الترخيص
 
-هذا المشروع مرخص بموجب رخصة GPL-3.0-or-later. راجع ملف [LICENSE](LICENSE).
-
----
-
-## سجل النجوم (Star History)
-
-<div align="center" dir="ltr">
-<a href="https://www.star-history.com/?repos=LumoRez07%2FFlow&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=LumoRez07/Flow&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=LumoRez07/Flow&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=LumoRez07/Flow&type=date&legend=top-left" />
- </picture>
-</a>
-</div>
-
-</div>
+هذا المشروع مرخّص بموجب GPL-3.0-or-later، تمامًا مثل الأصلي. راجع [LICENSE](LICENSE). تبقى الملكية الفكرية الأصلية بالكامل لـ[LumoRez07](https://github.com/LumoRez07).

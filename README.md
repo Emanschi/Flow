@@ -28,191 +28,33 @@
 </table>
 
 <p align="center">
-  <a href="https://github.com/LumoRez07/flow/releases" target="_blank">
-    <img src="https://img.shields.io/github/v/release/LumoRez07/flow?style=flat-square&color=2563eb&label=version" alt="Version 2.0.0" />
+  <a href="https://github.com/LumoRez07/Flow">
+    <img src="https://img.shields.io/badge/fork%20of-LumoRez07%2FFlow-24292f?style=flat-square&logo=github&logoColor=white" alt="Fork of LumoRez07/Flow" />
   </a>
-  <a href="https://github.com/LumoRez07/flow/releases" target="_blank">
-    <img src="https://img.shields.io/github/downloads/LumoRez07/flow/total?style=flat-square&color=3b82f6" alt="GitHub Downloads" />
-  </a>
-  <a href="https://sourceforge.net/projects/flowteleprompter/files/latest/download">
-    <img src="https://img.shields.io/sourceforge/dm/flowteleprompter.svg?style=flat-square" alt="SourceForge Downloads" />
-  </a>
-  <img src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows" />
-  <img src="https://img.shields.io/badge/platform-Linux%20(community)-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux (community port)" />
+  <img src="https://img.shields.io/badge/platform-Linux%20(unofficial)-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux (unofficial fork)" />
   <img src="https://img.shields.io/badge/backend-Rust%20%2B%20Tauri%20v2-FFC131?style=flat-square&logo=tauri&logoColor=black" alt="Tauri + Rust" />
   <img src="https://img.shields.io/badge/license-GPLv3-22c55e?style=flat-square" alt="GPLv3 License" />
 </p>
 
-<p align="center">
-  <strong>Lightweight teleprompter for Windows, built with Rust and Tauri.</strong>
-</p>
-
-<p align="center">
-  Please consider starring this repo if it helps you! ⭐
-</p>
-
-<p align="center">
-  <a href="https://www.ghacks.net/de/2026/05/28/flow-teleprompter-windows-voice-tracking/" target="_blank">
-    <img src="assets/featured%20on%20ghacks.svg" alt="Featured on Ghacks" width="480" />
-  </a>
-</p>
-
-## Flow is available on
-<div align="center">
-  <a href="https://sourceforge.net/p/flowteleprompter/">
-    <img alt="Download Flow Teleprompter" src="https://sourceforge.net/sflogo.php?type=17&amp;group_id=4087698" width="200">
-  </a>
-  <a href="https://apps.microsoft.com/detail/9p1fvfhwpmqr?mode=direct">
-    <img alt="Get it from Microsoft" src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
-  </a>
-  <br>
-</div>
-
 </div>
 
 ---
 
-<p align="center">
-  <img src="src/assets/readme-assets/en-f.webp" alt="Features" width="960" />
-</p>
-
-- Five playback styles: highlight, scroll, line, arrow, and voice tracking.
-- Local-first script storage and settings persistence.
-- Dedicated sound input tuning with device selection, live monitoring, noise gate, and gain controls.
-- App-wide voice control with localized wake greetings and resilient recognition handling.
-- Vosk speech models with bundled English and downloadable Turkish, Arabic, German, French, Spanish, Portuguese, and Finnish support.
-- Cue cards with countdown pauses and auto-resume.
-- Built-in script editor with formatting, word count, and reading-time helpers.
-- Remote messaging flow with inbox review, quick-connect QR links, and sender-side reply status updates.
-- Realtime text editing allowing multiple guests to join and edit the script at the same time via a private browser room.
-- Optional Groq-powered generation and rewriting.
-- Always-on-top Windows overlay with click-through and capture-protection options.
-- Official Tauri updater with in-app checks, install controls, and signed Windows release-feed support.
+> ### 🐧 This is an unofficial, community-maintained Linux fork
+>
+> **Flow** is a Windows teleprompter app created by [LumoRez07](https://github.com/LumoRez07). This repository is a **fork** that adds a native Linux build (AppImage, `.deb`, `.rpm`, Arch `PKGBUILD`) on top of the same codebase — it is **not** the official project, and it is **not** distributed through the Microsoft Store, SourceForge, or upstream GitHub Releases.
+>
+> The Linux support was offered upstream as a [pull request](https://github.com/LumoRez07/Flow/pull/3); the maintainer [declined to merge it](https://github.com/LumoRez07/Flow/pull/3#issuecomment-5464963891) since Linux isn't on their roadmap and they can't test/maintain it themselves, but explicitly said this fork is welcome to keep existing under the GPL license. That means:
+>
+> - **For the original Windows app** — full feature list, screenshots, official downloads, and the project roadmap — see **[github.com/LumoRez07/Flow](https://github.com/LumoRez07/Flow)**. This document only covers what's specific to the Linux build.
+> - **This fork can lag behind upstream.** New Windows-side features/fixes land here only whenever someone manually pulls them in; there's no guarantee of staying in sync.
+> - Bugs specific to the Linux packaging belong in **this repository's** issue tracker, not upstream's.
 
 ---
 
-<p align="center">
-  <img src="src/assets/readme-assets/en-sc.webp" alt="Feature Showcase" width="960" />
-</p>
+## What's different on Linux
 
-### 1. Message Injection
-https://github.com/user-attachments/assets/5e6a4fd1-5084-4e33-b56e-0142c2ad83ce
-
-### 2. Realtime Editing
-https://github.com/user-attachments/assets/653988f9-03f1-40ad-95b8-04339356cb07
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/en-ss.webp" alt="Screenshots" width="960" />
-</p>
-
-<div align="center">
-  <h3>Main Teleprompter Look</h3>
-  <img src="./assets/main teleprompter.png" width="400" alt="Main Teleprompter"/>
-  <img src="./assets/main chaned size.png" width="400" alt="Resized Layout"/>
-  
-  <br><br>
-  
-  <h3>Text Editor & Built-in AI Assistant</h3>
-  <img src="./assets/text editor.png" width="400" alt="Text Editor Interface"/>
-  <img src="./assets/AI assistant.png" width="400" alt="AI Workspace Integration"/>
-
-  <br><br>
-
-  <h3>Settings & Compact View</h3>
-  <img src="./assets/settings.png" width="400" alt="Application Settings"/>
-  <img src="./assets/minimized.png" width="400" alt="Minimized Compact Overlay"/>
-</div>
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/en-win.webp" alt="What is new?" width="960" />
-</p>
-
-- **Script Library & Manager**: Added a built-in script manager to save, organize, search, and switch between multiple scripts instantly, along with quick file import capabilities.<br><br>
-- **Section Navigator & Completion Tracker**: Added section tags and visual milestone indicators to break scripts into structured parts, jump between sections with one click, and track reading progress in real time.<br><br>
-- **Modularized Codebase**: Restructured core functionality into an optimized modular architecture for faster load times, rock-solid stability, and seamless future development.<br><br>
-- **Splash Screen**: Added a graceful startup screen with a smooth crossfade to eliminate window flickering during launch.<br><br>
-- **Multi-Monitor & DPI Fixes**: Enhanced window positioning, coordinate precision, and scaling across mixed-DPI and multi-monitor setups.<br><br>
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/en-rm.webp" alt="Roadmap" width="960" />
-</p>
-
-- [x] Tauri + Rust core architecture rewrite
-- [x] Invisible overlay for screensharing, presentations, and video calls
-- [x] Microsoft Store certification and release
-- [x] Cloudflare migration
-- [x] v2.0.0: Frontend JavaScript module refactor and performance improvements
-- [x] v2.0.0: Free/Pro tier split logic implementation
-- [ ] v2.1.0: Improvements to the web landing page and remote relay client
-- [ ] v2.2.0+: To be decided
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/en-gs.webp" alt="Get Started" width="960" />
-</p>
-
-1. Download the latest release from the [Microsoft Store](https://apps.microsoft.com/detail/9p1fvfhwpmqr?mode=direct) or [GitHub Releases](https://github.com/LumoRez07/flow/releases);
-2. Run the `.exe` or `.msi` installer;
-3. Launch Flow and start prompting.
-
----
-
-## Development
-
-Requirements:
-- Node.js
-- Rust
-- Tauri prerequisites for Windows
-
-Run locally:
-
-```bash
-npm install
-npm run tauri dev
-```
-
-Build:
-
-```bash
-npm run tauri build
-```
-
-Build output:
-
-```text
-src-tauri/target/release
-src-tauri/target/release/bundle
-```
-
-### Signed updater release
-
-To produce a Windows release that is ready for GitHub Releases and Flow's in-app updater, load the updater signing key into the environment before building:
-
-```powershell
-$env:TAURI_SIGNING_PRIVATE_KEY = Get-Content -Raw "$HOME\.tauri\flow-updater.key"
-$env:TAURI_SIGNING_PRIVATE_KEY_PASSWORD = "<your-updater-key-password>"
-npm run tauri build
-```
-
-Publish these files from `src-tauri/target/release/bundle` to the GitHub release:
-
-- `msi/flow_2.0.0_x64_en-US.msi`
-- `latest.json`
-
-The `.sig` file is generated alongside the MSI for reference, while `latest.json` is the updater feed consumed by the app.
-
----
-
-## Linux (community port)
-
-Flow also builds natively on Linux, as an AppImage, `.deb`, `.rpm`, or an Arch `PKGBUILD`. This is a community-maintained port; Windows remains the primary, officially supported platform. See [BUILDING-LINUX.md](BUILDING-LINUX.md) for prerequisites and build instructions — there is no official pre-built binary release yet, so building from source (or grabbing an artifact from the [Linux CI workflow](.github/workflows/build-linux.yml)) is currently required.
+Everything not listed here (playback styles, script editor, voice tracking, remote messaging, realtime editing, AI-assisted rewriting, the Windows overlay/updater, etc.) works the same as described in the [upstream README](https://github.com/LumoRez07/Flow) — this fork doesn't change any of that, it only adds Linux packaging and a handful of Linux-specific adaptations.
 
 Honest limitations compared to Windows:
 
@@ -222,37 +64,44 @@ Honest limitations compared to Windows:
 | Wayland | Runs via XWayland by default (always-on-top, absolute positioning, and global hotkeys need it); native Wayland is opt-in but breaks those three. |
 | Remote Control | Works, but needs a one-time manual firewall exception for TCP port 43127 (most Linux desktops default-deny inbound connections, unlike Windows' first-launch prompt). |
 | In-app auto-update | Works for the AppImage; `.deb`/`.rpm`/`PKGBUILD` installs update through your distro's package manager instead. |
+| Distribution | No pre-built binaries published yet — see [Getting started](#getting-started) below. |
+
+## Getting started
+
+There are no official pre-built Linux binaries yet. Options, easiest first:
+
+1. **Arch Linux**: use the provided [`PKGBUILD`](packaging/arch/PKGBUILD) (builds from source) or [`PKGBUILD-bin`](packaging/arch/PKGBUILD-bin) (once a release with binary assets exists).
+2. **Any distro**: grab an AppImage/`.deb`/`.rpm` artifact from the [Linux CI workflow](.github/workflows/build-linux.yml)'s latest successful run.
+3. **Build from source**: see [BUILDING-LINUX.md](BUILDING-LINUX.md) for per-distro prerequisites and build commands.
+
+For Windows, use the official channels linked in the [upstream README](https://github.com/LumoRez07/Flow) (Microsoft Store, GitHub Releases, SourceForge).
+
+## Development
+
+This fork's changes are Linux-only (no `#[cfg(windows)]` code or shared Tauri config was touched). For Linux prerequisites, build commands, and known build-time issues, see **[BUILDING-LINUX.md](BUILDING-LINUX.md)**.
+
+For Windows development, see the [upstream repository](https://github.com/LumoRez07/Flow).
 
 ---
 
 ## Privacy
 
-- Most data is stored locally on the device.
-- Voice tracking runs locally with Vosk models.
-- Groq requests are only sent when AI features are used.
-- See [privacy-policy.md](privacy-policy.md) for the current privacy policy.
-
----
-
-## Acknowledgments
-
-Special thanks to [@emanschigames](https://www.instagram.com/emanschigames/?hl=en) and [@nour690](https://github.com/nour690) for supporting Flow Teleprompter when it needed it most. Even though it may have been a small gesture, it meant a lot and is sincerely appreciated.
-
+Same data-handling behavior as upstream — most data stays local, voice tracking runs locally via Vosk, and Groq requests are only sent when AI features are used. See [privacy-policy.md](privacy-policy.md).
 
 ---
 
 ## License
 
-This project is licensed under GPL-3.0-or-later. See [LICENSE](LICENSE).
+Like upstream, this project is licensed under GPL-3.0-or-later. See [LICENSE](LICENSE). All original authorship remains with [LumoRez07](https://github.com/LumoRez07); this repository's Linux-specific changes are additions on top of that codebase, also released under GPLv3.
 
 ---
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=LumoRez07%2FFlow&type=date&legend=top-left">
+<a href="https://www.star-history.com/?repos=Emanschi%2FFlow&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=LumoRez07/Flow&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=LumoRez07/Flow&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=LumoRez07/Flow&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Emanschi/Flow&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Emanschi/Flow&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Emanschi/Flow&type=date&legend=top-left" />
  </picture>
 </a>

@@ -14,17 +14,21 @@
 # lightweight source tag tarball rather than duplicated into the binary
 # release asset.
 #
+# This is the Emanschi/Flow fork's package, not upstream's -- LumoRez07
+# declined to merge Linux support (not on their roadmap, can't test/
+# maintain it) but explicitly allowed the fork to keep distributing it
+# under GPL. See https://github.com/LumoRez07/Flow/pull/3
+#
 # NOTE: the second source entry's filename/URL must match whatever the
-# Linux release workflow (plan/01-SONNET-TASKS.md Phase 6.3, not yet
-# implemented) actually publishes as a release asset. Update it here once
-# that workflow exists and its real asset name is known.
+# fork's Linux release workflow (.github/workflows/build-linux.yml)
+# actually publishes as a release asset once a tagged release exists.
 
 pkgname=flow-teleprompter-bin
 pkgver=2.0.0
 pkgrel=1
-pkgdesc="A modern desktop teleprompter for smooth reading, quick editing, voice controls, and remote message injection (prebuilt binary)"
+pkgdesc="A modern desktop teleprompter for smooth reading, quick editing, voice controls, and remote message injection (prebuilt binary; community Linux fork of LumoRez07/Flow)"
 arch=('x86_64')
-url="https://github.com/LumoRez07/Flow"
+url="https://github.com/Emanschi/Flow"
 license=('GPL-3.0-or-later')
 depends=('webkit2gtk-4.1' 'gtk3' 'libayatana-appindicator' 'alsa-lib' 'vosk-api' 'hicolor-icon-theme'
          'gtk-update-icon-cache' 'desktop-file-utils')
@@ -32,11 +36,10 @@ provides=('flow-teleprompter')
 conflicts=('flow-teleprompter')
 options=('!strip')
 install="flow-teleprompter.install"
-source=("flow-src-$pkgver.tar.gz::https://github.com/LumoRez07/Flow/archive/refs/tags/v$pkgver.tar.gz"
-        "flow-linux-$CARCH-$pkgver.tar.gz::https://github.com/LumoRez07/Flow/releases/download/v$pkgver/flow-linux-$CARCH.tar.gz")
-# TODO: replace with real checksums once v$pkgver is tagged/released
-# upstream (this Linux port has not been released yet — see
-# plan/01-SONNET-TASKS.md Phase 7.3 "Upstream-PR").
+source=("flow-src-$pkgver.tar.gz::https://github.com/Emanschi/Flow/archive/refs/tags/v$pkgver.tar.gz"
+        "flow-linux-$CARCH-$pkgver.tar.gz::https://github.com/Emanschi/Flow/releases/download/v$pkgver/flow-linux-$CARCH.tar.gz")
+# TODO: replace with real checksums once v$pkgver is tagged/released on
+# the fork.
 sha256sums=('SKIP'
             'SKIP')
 

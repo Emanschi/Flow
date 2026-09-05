@@ -28,231 +28,32 @@
 </table>
 
 <p align="center">
-  <a href="https://github.com/LumoRez07/flow/releases" target="_blank">
-    <img src="https://img.shields.io/github/v/release/LumoRez07/flow?style=flat-square&color=2563eb&label=versio" alt="Versio 2.0.0" />
+  <a href="https://github.com/LumoRez07/Flow">
+    <img src="https://img.shields.io/badge/fork-LumoRez07%2FFlow-24292f?style=flat-square&logo=github&logoColor=white" alt="LumoRez07/Flow-fork" />
   </a>
-  <a href="https://github.com/LumoRez07/flow/releases" target="_blank">
-    <img src="https://img.shields.io/github/downloads/LumoRez07/flow/total?style=flat-square&color=3b82f6" alt="GitHub-lataukset" />
-  </a>
-  <a href="https://sourceforge.net/projects/flowteleprompter/files/latest/download">
-    <img src="https://img.shields.io/sourceforge/dm/flowteleprompter.svg?style=flat-square" alt="SourceForge-lataukset" />
-  </a>
-  <img src="https://img.shields.io/badge/alusta-Windows%2010%20%7C%2011-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows" />
-  <img src="https://img.shields.io/badge/platform-Linux%20(community)-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux (community port)" />
-  <img src="https://img.shields.io/badge/taustajärjestelmä-Rust%20%2B%20Tauri%20v2-FFC131?style=flat-square&logo=tauri&logoColor=black" alt="Tauri + Rust" />
-  <img src="https://img.shields.io/badge/lisenssi-GPLv3-22c55e?style=flat-square" alt="GPLv3-lisenssi" />
+  <img src="https://img.shields.io/badge/alusta-Linux%20(ep%C3%A4virallinen)-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux (epävirallinen fork)" />
 </p>
-
-<p align="center">
-  <strong>Kevyt ja suorituskykyinen teleprompteri Windowsille, rakennettu Rustilla ja Taurilla.</strong>
-</p>
-
-<p align="center">
-  Harkitse tähden antamista tälle repositoriolle, jos siitä on sinulle apua! ⭐
-</p>
-
-<p align="center">
-  <a href="https://www.ghacks.net/de/2026/05/28/flow-teleprompter-windows-voice-tracking/" target="_blank">
-    <img src="assets/featured%20on%20ghacks.svg" alt="Esitelty Ghacksissa" width="480" />
-  </a>
-</p>
-
-## Flow on saatavilla
-<div align="center">
-  <a href="https://sourceforge.net/p/flowteleprompter/">
-    <img alt="Lataa Flow Teleprompter" src="https://sourceforge.net/sflogo.php?type=17&amp;group_id=4087698" width="200">
-  </a>
-  <a href="https://apps.microsoft.com/detail/9p1fvfhwpmqr?mode=direct">
-    <img alt="Hanki Microsoft Storesta" src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
-  </a>
-  <br>
-</div>
 
 </div>
 
 ---
 
-<p align="center">
-  <img src="src/assets/readme-assets/fi-f.webp" alt="Ominaisuudet" width="960" />
-</p>
+### 🐧 Tämä on yhteisön ylläpitämä epävirallinen Linux-fork
 
-- Viisi toistotilaa: korostus (highlight), vieritys (scroll), rivi (line), nuoli (arrow) ja puheenseuranta (voice tracking).
-- Paikallislähtöinen käsikirjoitusten tallennus ja asetusten säilyminen (local-first).
-- Erillinen äänitulon säätö laitevalinnalla, reaaliaikaisella seurannalla, kohinaportilla (noise gate) ja vahvistuksen säädöllä (gain).
-- Koko sovelluksen laajuinen ääniohjaus lokalisoiduilla herätysilmauksilla ja joustavalla tunnistuksella.
-- Vosk-puhemallit sisäänrakennetulla englannin kielellä sekä ladattavalla suomen, turkin, arabian, saksan, ranskan, espanjan ja portugalin tuella.
-- Vihjekortit (cue cards) laskentalaskentatauolla ja automaattisella jatkamisella.
-- Sisäänrakennettu käsikirjoituseditori muotoilutyökaluilla, sanamäärälaskurilla ja arvioidulla lukuajan näytöllä.
-- Etäviestintätoiminto saapuneiden viestien tarkastelulla, pikayhdistettävillä QR-linkeillä ja lähettäjäpuolen vastaustilapäivityksillä.
-- Reaaliaikainen tekstinmuokkaus, jonka avulla useat vieraat voivat liittyä ja muokata käsikirjoitusta samanaikaisesti yksityisen selainhuoneen kautta.
-- Valinnainen Groq-pohjainen tekoälytekstin luonti ja uudelleenkirjoitus.
-- Aina päällimmäisenä pysyvä (always-on-top) Windows-peittokuva läpiklikkaus- (click-through) ja kaappauksenestovaihtoehdoilla (capture-protection).
-- Virallinen Tauri-päivittäjä sovelluksen sisäisillä tarkistuksilla, asennushallinnalla ja allekirjoitettujen Windows-julkaisujen syötteillä.
+**Flow** on [LumoRez07:n](https://github.com/LumoRez07) tekemä Windows-telepromptersovellus. Tämä repositorio on **fork**, joka lisää saman koodikannan päälle natiivin Linux-käännöksen (AppImage, `.deb`, `.rpm`, Arch-`PKGBUILD`) — se **ei** ole virallinen projekti, eikä sitä jaeta Microsoft Storen, SourceForgen tai alkuperäisen projektin GitHub-julkaisujen kautta.
 
----
+Linux-tuki tarjottiin alkuperäiselle projektille [pull requestina](https://github.com/LumoRez07/Flow/pull/3); ylläpitäjä [päätti olla yhdistämättä sitä](https://github.com/LumoRez07/Flow/pull/3#issuecomment-5464963891), koska Linux ei ole hänen etenemissuunnitelmassaan eikä hän voi testata tai ylläpitää sitä itse, mutta hän ilmoitti nimenomaisesti, että tämä fork saa jatkaa olemassaoloaan GPL-lisenssin alaisena. Tämä fork voi siis jäädä jälkeen alkuperäisestä, ja Linux-paketointiin liittyvät ongelmat kuuluu ilmoittaa **tämän** repositorion, ei alkuperäisen, ongelmanseurantaan.
 
-<p align="center">
-  <img src="src/assets/readme-assets/fi-sc.webp" alt="Ominaisuuksien esittely" width="960" />
-</p>
+Tätä suomenkielistä käännöstä ei ole vielä päivitetty uuteen, Linuxiin keskittyvään rakenteeseen. Toistaiseksi:
 
-### 1. Viestin syöttö (Message Injection)
-https://github.com/user-attachments/assets/5e6a4fd1-5084-4e33-b56e-0142c2ad83ce
+- **Alkuperäistä Windows-sovellusta varten** (täydellinen ominaisuuslista, kuvakaappaukset, viralliset lataukset, etenemissuunnitelma): katso **[github.com/LumoRez07/Flow](https://github.com/LumoRez07/Flow)** tai sen [suomenkielinen README](https://github.com/LumoRez07/Flow/blob/main/README.fi.md).
+- **Tämän Linux-forkin täydellistä dokumentaatiota varten** (rajoitukset, aloittaminen, kehitys): katso tämän forkin [englanninkielinen README](README.md) tai [saksankielinen README](README.de.md).
+- **Linuxilla kääntämistä varten**: katso [BUILDING-LINUX.md](BUILDING-LINUX.md).
 
-### 2. Reaaliaikainen muokkaus (Realtime Editing)
-https://github.com/user-attachments/assets/653988f9-03f1-40ad-95b8-04339356cb07
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/fi-ss.webp" alt="Kuvakaappaukset" width="960" />
-</p>
-
-<div align="center">
-  <h3>Teleprompterin päänäkymä</h3>
-  <img src="./assets/main teleprompter.png" width="400" alt="Päänäkymä"/>
-  <img src="./assets/main chaned size.png" width="400" alt="Uudelleenskaalattu asettelu"/>
-  
-  <br><br>
-  
-  <h3>Tekstieditori ja sisäänrakennettu tekoälyavustaja</h3>
-  <img src="./assets/text editor.png" width="400" alt="Tekstieditorin käyttöliittymä"/>
-  <img src="./assets/AI assistant.png" width="400" alt="Tekoälytyötilan integraatio"/>
-
-  <br><br>
-
-  <h3>Asetukset ja kompaktinäkymä</h3>
-  <img src="./assets/settings.png" width="400" alt="Sovelluksen asetukset"/>
-  <img src="./assets/minimized.png" width="400" alt="Kompakti peittokuvanäkymä"/>
-</div>
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/fi-win.webp" alt="Mitä uutta?" width="960" />
-</p>
-
-- **Käsikirjoituskirjasto ja -hallinta**: Sisäänrakennettu käsikirjoitusten hallintatyökalu useiden tekstien tallentamiseen, järjestämiseen, hakemiseen ja vaihtamiseen välittömästi sekä nopea tiedostojen tuontitoiminto.<br><br>
-- **Osionavigaattori ja edistymisen seuranta**: Uudet osiotunnisteet ja visuaaliset virstanpylväät pitkien tekstien jakamiseen selkeisiin osiin, mahdollistaen nopean siirtymisen osiosta toiseen ja reaaliaikaisen edistymisen seurannan lukemisen aikana.<br><br>
-- **Modulaarinen koodipohja**: Ydintoimintojen uudelleenjärjestely suorituskykyiseen modulaariseen arkkitehtuuriin nopeampaa latautumista ja vakaata toimintaa varten.<br><br>
-- **Aloitusruutu (Splash Screen)**: Tyylikäs käynnistysruutu pehmeällä häivytyksellä (crossfade), joka poistaa ikkunan välkkymisen käynnistyksen yhteydessä.<br><br>
-- **Moninäyttö- ja DPI-korjaukset**: Parannettu ikkunoiden kohdistus, koordinaattitarkkuus ja skaalaus usean näytön ja sekalaisten DPI-arvojen ympäristöissä.<br><br>
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/fi-rm.webp" alt="Tiekartta" width="960" />
-</p>
-
-- [x] Ydinarkkitehtuurin uudelleenkirjoitus Tauri + Rust -teknologioilla
-- [x] Näkymätön peittokuva näytönjakoon, esityksiin ja videopuheluihin
-- [x] Microsoft Store -sertifiointi ja julkaisu
-- [x] Siirtyminen Cloudflare-infrastruktuuriin
-- [x] v2.0.0: Frontendin JavaScript-moduulien uudelleenjärjestely ja suorituskykyparannukset
-- [x] v2.0.0: Free/Pro-versioiden erottelulogiikan toteutus
-- [ ] v2.1.0: Verkkolaskeutumissivun ja etäohjausasiakkaan parannukset
-- [ ] v2.2.0+: Päätetään myöhemmin
-
----
-
-<p align="center">
-  <img src="src/assets/readme-assets/fi-gs.webp" alt="Aloittaminen" width="960" />
-</p>
-
-1. Lataa uusin versio [Microsoft Storesta](https://apps.microsoft.com/detail/9p1fvfhwpmqr?mode=direct) tai [GitHub Releases -sivulta](https://github.com/LumoRez07/flow/releases);
-2. Suorita `.exe`- tai `.msi`-asennusohjelma;
-3. Käynnistä Flow ja aloita esityksesi.
-
----
-
-## Kehitys
-
-Vaatimukset:
-- Node.js
-- Rust
-- Taurin edellytykset Windowsille
-
-Suorita paikallisesti:
-
-```bash
-npm install
-npm run tauri dev
-```
-
-Käännä (Build):
-
-```bash
-npm run tauri build
-```
-
-Käännöksen tuloste:
-
-```text
-src-tauri/target/release
-src-tauri/target/release/bundle
-```
-
-### Allekirjoitettu päivittäjän julkaisu
-
-Jotta voit luoda Windows-julkaisun, joka on valmis GitHub Releases -julkaisuun ja Flow'n sovelluksen sisäiseen päivittäjään, aseta päivittäjän allekirjoitusavain ympäristömuuttujiin ennen kääntämistä:
-
-```powershell
-$env:TAURI_SIGNING_PRIVATE_KEY = Get-Content -Raw "$HOME\.tauri\flow-updater.key"
-$env:TAURI_SIGNING_PRIVATE_KEY_PASSWORD = "<your-updater-key-password>"
-npm run tauri build
-```
-
-Julkaise nämä tiedostot hakemistosta `src-tauri/target/release/bundle` GitHub-julkaisuun:
-
-- `msi/flow_2.0.0_x64_en-US.msi`
-- `latest.json`
-
-`.sig`-tiedosto luodaan MSI-tiedoston rinnalle viitteeksi, kun taas `latest.json` on sovelluksen käyttämä päivityssyöte.
-
----
-
-## Linux (community port)
-
-Flow also builds natively on Linux, as an AppImage, `.deb`, `.rpm`, or an Arch `PKGBUILD`. This is a community-maintained port; Windows remains the primary, officially supported platform. See [BUILDING-LINUX.md](BUILDING-LINUX.md) for prerequisites and build instructions — there is no official pre-built binary release yet, so building from source (or grabbing an artifact from the [Linux CI workflow](.github/workflows/build-linux.yml)) is currently required.
-
-Honest limitations compared to Windows:
-
-| Feature | Linux |
-| --- | --- |
-| Screen-capture protection | Not available — the underlying API is Windows-only, with no X11/Wayland equivalent. |
-| Wayland | Runs via XWayland by default (always-on-top, absolute positioning, and global hotkeys need it); native Wayland is opt-in but breaks those three. |
-| Remote Control | Works, but needs a one-time manual firewall exception for TCP port 43127 (most Linux desktops default-deny inbound connections, unlike Windows' first-launch prompt). |
-| In-app auto-update | Works for the AppImage; `.deb`/`.rpm`/`PKGBUILD` installs update through your distro's package manager instead. |
-
----
-
-## Tietosuoja
-
-- Suurin osa tiedoista tallennetaan paikallisesti laitteellesi.
-- Puheenseuranta toimii paikallisesti Vosk-malleilla.
-- Groq-pyynnöt lähetetään vain silloin, kun tekoälyominaisuuksia käytetään aktiivisesti.
-- Katso nykyinen tietosuojakäytäntö tiedostosta [privacy-policy.md](privacy-policy.md).
-
----
-
-## Kiitokset
-
-Erityiskiitos käyttäjille [@emanschigames](https://www.instagram.com/emanschigames/?hl=en) ja [@nour690](https://github.com/nour690) Flow Teleprompterin tukemisesta silloin, kun sitä eniten tarvittiin. Vaikka ele olisi ollut pieni, se merkitsi paljon ja sitä arvostetaan vilpittömästi.
-
+Haluatko auttaa kääntämään tämän forkin README-tiedoston suomeksi? Pull requestit ovat tervetulleita.
 
 ---
 
 ## Lisenssi
 
-Tämä projekti on lisensoitu GPL-3.0-or-later -lisenssillä. Katso [LICENSE](LICENSE).
-
----
-
-## Tähtihistoria (Star History)
-
-<a href="https://www.star-history.com/?repos=LumoRez07%2FFlow&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=LumoRez07/Flow&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=LumoRez07/Flow&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=LumoRez07/Flow&type=date&legend=top-left" />
- </picture>
-</a>
+Tämä projekti on lisensoitu GPL-3.0-or-later-lisenssillä, kuten alkuperäinenkin. Katso [LICENSE](LICENSE). Alkuperäinen tekijänoikeus säilyy kokonaan [LumoRez07:lla](https://github.com/LumoRez07).

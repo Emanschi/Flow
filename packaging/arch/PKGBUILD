@@ -11,9 +11,9 @@
 pkgname=flow-teleprompter
 pkgver=2.0.0
 pkgrel=1
-pkgdesc="A modern desktop teleprompter for smooth reading, quick editing, voice controls, and remote message injection"
+pkgdesc="A modern desktop teleprompter for smooth reading, quick editing, voice controls, and remote message injection (community Linux fork of LumoRez07/Flow)"
 arch=('x86_64')
-url="https://github.com/LumoRez07/Flow"
+url="https://github.com/Emanschi/Flow"
 license=('GPL-3.0-or-later')
 depends=('webkit2gtk-4.1' 'gtk3' 'libayatana-appindicator' 'alsa-lib' 'vosk-api' 'hicolor-icon-theme'
          'gtk-update-icon-cache' 'desktop-file-utils')
@@ -22,10 +22,14 @@ provides=('flow-teleprompter-bin')
 conflicts=('flow-teleprompter-bin')
 options=('!lto')
 install="$pkgname.install"
-source=("$pkgname-$pkgver.tar.gz::https://github.com/LumoRez07/Flow/archive/refs/tags/v$pkgver.tar.gz")
-# TODO: replace with the real checksum once v$pkgver is tagged upstream and
-# the tarball above actually exists (this Linux port has not been released
-# yet — see plan/01-SONNET-TASKS.md Phase 7.3 "Upstream-PR").
+# Pulled from the Emanschi/Flow fork, not upstream LumoRez07/Flow -- the
+# Linux packaging this PKGBUILD depends on only exists on the fork.
+# LumoRez07 declined to merge Linux support (not on their roadmap, can't
+# test/maintain it) but explicitly allowed the fork to keep distributing
+# it under GPL. See https://github.com/LumoRez07/Flow/pull/3
+source=("$pkgname-$pkgver.tar.gz::https://github.com/Emanschi/Flow/archive/refs/tags/v$pkgver.tar.gz")
+# TODO: replace with the real checksum once v$pkgver is tagged on the fork
+# and the tarball above actually exists.
 sha256sums=('SKIP')
 
 build() {

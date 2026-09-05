@@ -8,6 +8,8 @@
 	(at your option) any later version.
 -->
 
+> **Note (Linux fork):** this is the original privacy policy written by Flow's author for the official Windows app. This repository is an unofficial, community-maintained fork ([github.com/Emanschi/Flow](https://github.com/Emanschi/Flow)) that adds a Linux build on the same codebase; the data-handling behavior it describes applies identically on Linux, since no data-collection code was changed for this fork. For anything Linux-packaging-specific, report to this fork's issue tracker instead of the contact below.
+
 # Privacy Policy for Flow
 
 Effective date: March 27, 2026

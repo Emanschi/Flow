@@ -63,15 +63,16 @@ Ehrliche Übersicht der Einschränkungen gegenüber Windows:
 | Schutz vor Bildschirmaufnahme | Nicht verfügbar — die zugrunde liegende API ist Windows-exklusiv, ein Äquivalent für X11/Wayland gibt es nicht. |
 | Wayland | Läuft standardmäßig über XWayland (Always-on-Top, absolute Fensterpositionierung und globale Hotkeys benötigen es); natives Wayland ist optional aktivierbar, bricht dabei aber genau diese drei Funktionen. |
 | Fernsteuerung (Remote Control) | Funktioniert, benötigt aber einmalig eine manuelle Firewall-Freigabe für TCP-Port 43127 (die meisten Linux-Desktops blockieren eingehende Verbindungen standardmäßig, anders als der Erstlaunch-Dialog unter Windows). |
-| Automatisches In-App-Update | Funktioniert bei der AppImage; `.deb`/`.rpm`/`PKGBUILD`-Installationen werden stattdessen über den Paketmanager der Distribution aktualisiert. |
-| Distribution | Es gibt noch keine fertig gebauten Releases — siehe [Erste Schritte](#erste-schritte) unten. |
+| Automatisches In-App-Update | Für das aktuelle Release noch nicht eingerichtet (der Mechanismus ist nachweislich funktionsfähig, siehe [BUILDING-LINUX.md](BUILDING-LINUX.md)); `.deb`/`.rpm`/`PKGBUILD`-Installationen werden über den Paketmanager der Distribution aktualisiert. |
 
 ## Erste Schritte
 
-Es gibt noch keine offiziellen, fertig gebauten Linux-Binärdateien. Optionen, einfachste zuerst:
+Das aktuelle [Release](https://github.com/Emanschi/Flow/releases/latest) herunterladen:
 
-1. **Arch Linux**: das mitgelieferte [`PKGBUILD`](packaging/arch/PKGBUILD) (baut aus dem Quellcode) oder [`PKGBUILD-bin`](packaging/arch/PKGBUILD-bin) (sobald ein Release mit Binär-Assets existiert) verwenden.
-2. **Beliebige Distribution**: ein AppImage-/`.deb`-/`.rpm`-Artefakt aus dem letzten erfolgreichen Lauf des [Linux-CI-Workflows](.github/workflows/build-linux.yml) holen.
+1. **AppImage** (beliebige Distribution): `flow_*_amd64.AppImage` herunterladen, `chmod +x`, direkt ausführen.
+2. **Debian/Ubuntu**: `sudo apt install ./flow_*_amd64.deb`
+3. **Fedora/openSUSE**: `sudo dnf install ./flow-*.x86_64.rpm`
+4. **Arch Linux**: das mitgelieferte [`PKGBUILD`](packaging/arch/PKGBUILD) (baut aus dem Quellcode) oder [`PKGBUILD-bin`](packaging/arch/PKGBUILD-bin) (fertig gebaut) verwenden.
 3. **Selbst aus dem Quellcode bauen**: siehe [BUILDING-LINUX.md](BUILDING-LINUX.md) für Voraussetzungen je Distribution und Build-Befehle.
 
 Für Windows die offiziellen Kanäle nutzen, die im [README des Originals](https://github.com/LumoRez07/Flow) verlinkt sind (Microsoft Store, GitHub Releases, SourceForge).

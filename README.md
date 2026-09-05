@@ -63,15 +63,16 @@ Honest limitations compared to Windows:
 | Screen-capture protection | Not available — the underlying API is Windows-only, with no X11/Wayland equivalent. |
 | Wayland | Runs via XWayland by default (always-on-top, absolute positioning, and global hotkeys need it); native Wayland is opt-in but breaks those three. |
 | Remote Control | Works, but needs a one-time manual firewall exception for TCP port 43127 (most Linux desktops default-deny inbound connections, unlike Windows' first-launch prompt). |
-| In-app auto-update | Works for the AppImage; `.deb`/`.rpm`/`PKGBUILD` installs update through your distro's package manager instead. |
-| Distribution | No pre-built binaries published yet — see [Getting started](#getting-started) below. |
+| In-app auto-update | Not wired up for the current release yet (mechanism is proven to work, see [BUILDING-LINUX.md](BUILDING-LINUX.md)); `.deb`/`.rpm`/`PKGBUILD` installs update through your distro's package manager. |
 
 ## Getting started
 
-There are no official pre-built Linux binaries yet. Options, easiest first:
+Grab the latest [Release](https://github.com/Emanschi/Flow/releases/latest):
 
-1. **Arch Linux**: use the provided [`PKGBUILD`](packaging/arch/PKGBUILD) (builds from source) or [`PKGBUILD-bin`](packaging/arch/PKGBUILD-bin) (once a release with binary assets exists).
-2. **Any distro**: grab an AppImage/`.deb`/`.rpm` artifact from the [Linux CI workflow](.github/workflows/build-linux.yml)'s latest successful run.
+1. **AppImage** (any distro): download `flow_*_amd64.AppImage`, `chmod +x`, run it directly.
+2. **Debian/Ubuntu**: `sudo apt install ./flow_*_amd64.deb`
+3. **Fedora/openSUSE**: `sudo dnf install ./flow-*.x86_64.rpm`
+4. **Arch Linux**: use the provided [`PKGBUILD`](packaging/arch/PKGBUILD) (builds from source) or [`PKGBUILD-bin`](packaging/arch/PKGBUILD-bin) (prebuilt).
 3. **Build from source**: see [BUILDING-LINUX.md](BUILDING-LINUX.md) for per-distro prerequisites and build commands.
 
 For Windows, use the official channels linked in the [upstream README](https://github.com/LumoRez07/Flow) (Microsoft Store, GitHub Releases, SourceForge).
